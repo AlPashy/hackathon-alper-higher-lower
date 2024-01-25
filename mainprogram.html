@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahr oder Falsch Spiel</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="logic.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    
+    <div id="game-container">
+        <h1>Wahr oder Falsch Spiel</h1>
+        <button onclick="startGame()">Starte das Spiel</button>
+
+        <div class="question" id="question1">
+            <p>1. Der Umsatz im Geschäftsjahr 2022 betrug 1,37 Mrd. Euro.</p>
+            <button onclick="checkAnswer(true)">Wahr</button>
+            <button onclick="checkAnswer(false)">Falsch</button>
+        </div>
+
+        <div class="question" id="question2">
+            <p>2. Die Anzahl der Mitarbeitenden beträgt 5.100.</p>
+            <button onclick="checkAnswer(true)">Wahr</button>
+            <button onclick="checkAnswer(false)">Falsch</button>
+        </div>
+
+        <!-- Füge weitere Fragen hinzu -->
+
+        <p id="result"></p>
+    </div>
+
+
+</body>
+</html>
